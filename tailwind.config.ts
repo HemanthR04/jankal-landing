@@ -1,5 +1,7 @@
 import type { Config } from "tailwindcss";
-
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,13 +10,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors:{
+        primary:"#162234",
+        secondary:"#dbdad5"
       },
+      fontFamily:{
+        Boska:"Boska, sans-serif",
+        Satoshi:"Satoshi",
+        InstrumentSerif:"Instrument Serif"
+      },
+      
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
 export default config;
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
