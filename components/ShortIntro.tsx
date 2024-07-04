@@ -4,7 +4,7 @@ import React from 'react'
 const ShortIntro = () => {
   return (
     <div className='bg-secondary w-full h-screen flex relative'>
-        <Image className='absolute top-[100px] left-[570px]  opacity-20' src={'/assets/logo.png'} alt='logo' width={420} height={72}></Image>
+        
         <div className='w-1/2 h-screen z-20 '>
           <h1 className='text-3xl text-primary font-Satoshi font-bold p-8 m-8'>[ A SHORT INTRODUCTION ]</h1>
         </div>
