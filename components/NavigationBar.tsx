@@ -4,11 +4,11 @@ import React from 'react'
 
 const NavigationBar = () => {
     return (
-        <nav className='flex items-center justify-between px-16 py-2'>
+        <nav className='flex items-center justify-between px-4 md:px-16 py-4 md:py-2'>
             <div>
                 <Image className='w-[60px] md:w-[72px]' src={'/assets/logo-gold.png'} alt='logo' width={72} height={72}></Image>
             </div>
-            <div className='ml-16'>
+            <div className='ml-16 hidden md:block'>
                 <ul className='flex items-center gap-16 '>
                     <li className='text-secondary font-bold hover:text-white'><Link href={''}>Home</Link></li>
                     <li className='text-secondary font-bold hover:text-white'><Link href={''}>Properties</Link></li>
@@ -17,7 +17,7 @@ const NavigationBar = () => {
                 </ul>
             </div>
             <div>
-                <button className='bg-secondary text-primary py-2 px-6 rounded-full font-bold'>Enquire Now</button>
+                <button className='bg-secondary text-primary py-2 px-6 rounded-full font-bold hidden md:block'>Enquire Now</button>
             </div>
         </nav>
     )
