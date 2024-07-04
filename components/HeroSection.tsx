@@ -26,8 +26,8 @@ const HeroSection = () => {
                     style={{}}
                     ref={targetRef}
                     className='relative'>
-                    <motion.div style={{ scale, opacity }} className='video-container w-[90%] mx-auto  '>
-                        <video autoPlay muted className='rounded-lg' >
+                    <motion.div style={{ scale,  }} className='video-container w-[90%] mx-auto  '>
+                        <video autoPlay muted loop className='rounded-lg' >
                             <source src="/assets/InteriorVideo.mp4" type="video/mp4" />
                         </video>
                         <h1
