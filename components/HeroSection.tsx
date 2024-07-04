@@ -10,7 +10,7 @@ const HeroSection = () => {
         offset: ["start end", "end end"],
     });
 
-    const scale = useTransform(scrollYProgress, [0, 1], [0.7, 0.9]);
+    const scale = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
     const opacity = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
 
 
@@ -18,24 +18,20 @@ const HeroSection = () => {
         <>
             <div className="hero-container text-secondary">
                 <div className=' flex flex-col gap-4 mt-[100px]'>
-                    <h1 className='text-5xl italic text-center tracking-normal font-InstrumentSerif'>Experience Luxury Living with Bangalore&apos;s Top Properties</h1>
-                    <p className='text-2xl text-center font-Satoshi'>Expertly Curated Listings Tailored to Your Unique Lifestyle Needs</p>
+                    <h1 className='text-7xl font-bold tracking-wide text-center font-InstrumentSerif'>JANKAL ORCHIDS</h1>
+                    <p className='text-2xl font-bold text-center font-Satoshi'>Dive into Our Latest Residential Project and Elevate Your Living Experience.</p>
                     <button className='w-[150px] bg-secondary text-primary py-2 rounded-full font-Satoshi font-bold mx-auto'>Contact Us</button>
                 </div>
                 <motion.section
                     style={{}}
                     ref={targetRef}
                     className='relative'>
-                    <motion.div style={{ scale,  }} className='video-container w-[90%] mx-auto  '>
-                        <video autoPlay muted loop className='rounded-lg' >
+                    <motion.div style={{ scale,  }} className='video-container  mx-auto  '>
+                        <video autoPlay muted loop className='rounded-3xl' >
                             <source src="/assets/InteriorVideo.mp4" type="video/mp4" />
                         </video>
-                        <h1
-                        className=' absolute text-4xl font-Satoshi font-bold top-10 left-20 z-20 text-secondary'
-                    >
-                        Jankal Orchids
-                    </h1>
-                    <button className='font-Satoshi font-bold px-4 py-2 rounded-full absolute  bg-secondary text-primary bottom-10 right-10'>Enquire Now</button>
+                       
+                 
                     </motion.div>
                     <ProjectDetails/>
                 </motion.section>
