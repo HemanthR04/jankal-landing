@@ -18,7 +18,7 @@ const HeroSection = () => {
         <>
             <div className="hero-container text-secondary">
                 <div className=' flex flex-col gap-4 mt-[100px]'>
-                    <h1 className='text-5xl italic text-center tracking-normal font-InstrumentSerif'>Experience Luxury Living with Bangalore's Top Properties</h1>
+                    <h1 className='text-5xl italic text-center tracking-normal font-InstrumentSerif'>Experience Luxury Living with Bangalore&apos;s Top Properties</h1>
                     <p className='text-2xl text-center font-Satoshi'>Expertly Curated Listings Tailored to Your Unique Lifestyle Needs</p>
                     <button className='w-[150px] bg-secondary text-primary py-2 rounded-full font-Satoshi font-bold mx-auto'>Contact Us</button>
                 </div>
