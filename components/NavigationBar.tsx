@@ -4,7 +4,7 @@ import React from 'react'
 
 const NavigationBar = () => {
     return (
-        <nav className='flex items-center justify-between px-4 md:px-16 py-4 md:py-2'>
+        <nav className='flex items-center justify-between px-4 md:px-16 py-4'>
             <div>
                 <Image className='w-[60px] md:w-[72px]' src={'/assets/logo-gold.png'} alt='logo' width={72} height={72}></Image>
             </div>

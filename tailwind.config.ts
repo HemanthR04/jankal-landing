@@ -11,15 +11,25 @@ const config: Config = {
   theme: {
     extend: {
       colors:{
-        primary:"#162234",
-        secondary:"#dbdad5"
+        primary:"#dbdad5",
+        secondary:"#162234"
       },
       fontFamily:{
         Boska:"Boska, sans-serif",
         Satoshi:"Satoshi",
         InstrumentSerif:"Instrument Serif"
       },
-      
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      }
     },
   },
   plugins: [addVariablesForColors],

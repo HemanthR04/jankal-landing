@@ -1,4 +1,5 @@
 import React from 'react'
+import HeroGallery from './HeroGallery'
 
 
 const ProjectDetails = () => {
@@ -18,6 +19,7 @@ const ProjectDetails = () => {
         </div> 
        
     </div>
+    <HeroGallery/>
    
      </>
   )
